@@ -18,7 +18,7 @@ $ cd slash-command-decorator
 $ python setup.py install
 ```
 
-## Set the Query String in the event
+## Set Query String in event
 
 In handler function `event.body` parameter, it is necessary to set up URL query string that was tranmitted by Slack 
 
@@ -34,8 +34,6 @@ Usage examples are included in the [samples directory](https://google.co.jp)
 
 
 ```python
-# -*- coding: utf-8 -*-
-from __future__ import print_function
 from slash_command_decorator.slash_command import SlashCommand
 from slash_command_decorator import (
     lambda_manager,
@@ -82,7 +80,7 @@ def lambda_handler(event, context):
 ###Response Messages
 ####1.ephemeral 
  
-```
+```python
 @respond_to_option("^help$")
 def help_option(reaction):
     reaction.ephemeral("HELP!")
@@ -92,7 +90,7 @@ def help_option(reaction):
 
 ####2.in_channel
 
-```
+```python
 @respond_to_option("^hoge$")
 def hoge_option(reaction):
     reaction.in_channel("HOGE!")
@@ -102,7 +100,7 @@ def hoge_option(reaction):
 
 ####3.send
 
-```
+```python
 @respond_to_option("^fuga$")
 def fuga_option(reaction):
     reaction.send("FUGA!")
@@ -112,7 +110,7 @@ def fuga_option(reaction):
 
 ####4.reply
 
-```
+```python
 @respond_to_option("^PIYO$")
 def piyo_option(reaction):
     reaction.reply("PIYO!")
