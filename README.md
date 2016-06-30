@@ -93,9 +93,9 @@ def help_option(reaction):
 ####2.in_channel
 
 ```
-@respond_to_option("^help$")
-def help_option(reaction):
-    reaction.in_channel("HELP!")
+@respond_to_option("^hoge$")
+def hoge_option(reaction):
+    reaction.in_channel("HOGE!")
 ```
 
 ![in_channel](https://github.com/penta515/slash-command-decorator/blob/develop/images/hoge.gif)
@@ -103,9 +103,9 @@ def help_option(reaction):
 ####3.send
 
 ```
-@respond_to_option("^help$")
-def help_option(reaction):
-    reaction.send("HELP!")
+@respond_to_option("^fuga$")
+def fuga_option(reaction):
+    reaction.send("FUGA!")
 ```
 
 ![in_channel](https://github.com/penta515/slash-command-decorator/blob/develop/images/fuga.gif)
@@ -113,9 +113,9 @@ def help_option(reaction):
 ####4.reply
 
 ```
-@respond_to_option("^help$")
-def help_option(reaction):
-    reaction.reply("HELP!")
+@respond_to_option("^PIYO$")
+def piyo_option(reaction):
+    reaction.reply("PIYO!")
 ```
 
 ![in_channel](https://github.com/penta515/slash-command-decorator/blob/develop/images/piyo.gif)
