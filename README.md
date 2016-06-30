@@ -80,7 +80,7 @@ def lambda_handler(event, context):
 ```
 
 ###Response Messages
-####ephemeral 
+####1.ephemeral 
  
 ```
 @respond_to_option("^help$")
@@ -88,7 +88,9 @@ def help_option(reaction):
     reaction.ephemeral("HELP!")
 ```
 
-####in_channel
+![ephemeral](https://github.com/penta515/slash-command-decorator/blob/develop/images/help.gif)
+
+####2.in_channel
 
 ```
 @respond_to_option("^help$")
@@ -96,7 +98,9 @@ def help_option(reaction):
     reaction.in_channel("HELP!")
 ```
 
-####send
+![in_channel](https://github.com/penta515/slash-command-decorator/blob/develop/images/hoge.gif)
+
+####3.send
 
 ```
 @respond_to_option("^help$")
@@ -104,13 +108,17 @@ def help_option(reaction):
     reaction.send("HELP!")
 ```
 
-####reply
+![in_channel](https://github.com/penta515/slash-command-decorator/blob/develop/images/fuga.gif)
+
+####4.reply
 
 ```
 @respond_to_option("^help$")
 def help_option(reaction):
     reaction.reply("HELP!")
 ```
+
+![in_channel](https://github.com/penta515/slash-command-decorator/blob/develop/images/piyo.gif)
 
 ## Running tests
 
