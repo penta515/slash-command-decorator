@@ -7,4 +7,4 @@ test:
   override:
     - source pyenv/bin/activate
     - flake8 slash_command_decorator
-    - py.test
+    - py.test tests
