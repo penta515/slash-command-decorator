@@ -1,7 +1,7 @@
 # slash-command-decorator
 slash-command-decorator is a simple decorator for the use of AWS Lambda as the [Slack Slash Command](https://api.slack.com/slash-commands) backend.
 
-[![CircleCI](https://circleci.com/gh/penta515/slash-command-decorator.svg?style=svg)](https://circleci.com/gh/penta515/slash-command-decorator) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) 
+[![CircleCI](https://circleci.com/gh/penta515/slash-command-decorator.svg?style=svg)](https://circleci.com/gh/penta515/slash-command-decorator)
 
 ## Installation
 The latest release of slash-command-decorator can be installed via pip
@@ -29,9 +29,8 @@ In handler function `event.body` parameter, it is necessary to set up URL query 
 "token=aCec9XZPS6klbnAAAAAAAAAA&team_id=T0AAAAAAA&team_domain=test-domain&channel_id=C0AAAAAAA&channel_name=general&user_id=U0AAAAAAA&user_name=hoge&command=%2Fcommand&text=hoge&response_url=https%3A%2F%2Fhooks.slack.com%2Fcommands%2FT0JQU92NA%2F1234567890%2Faaaaaaaaaaaaaaaaaaa"
 ```
 
-## Basic usage
+## Usage examples
 Usage examples are included in the [samples directory](https://google.co.jp)
-
 
 ```python
 from slash_command_decorator.slash_command import SlashCommand
@@ -45,7 +44,6 @@ CONFIG = {
     "username": "Slash Command",
     "icon_emoji": ":penguin:"
 }
-
 
 @lambda_manager
 def lambda_handler(event, context):
@@ -74,10 +72,9 @@ def lambda_handler(event, context):
         fuga_option,
         piyo_option
     )
-
 ```
 
-###Response Messages
+###Types of Responses
 ####1.ephemeral 
  
 ```python
@@ -124,3 +121,6 @@ def piyo_option(reaction):
 $ py.test tests
 ```
 
+## License
+
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) 
