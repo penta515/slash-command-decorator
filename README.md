@@ -1,7 +1,7 @@
 # slash-command-decorator
 slash-command-decorator is a simple decorator for the use of AWS Lambda as the [Slack Slash Command](https://api.slack.com/slash-commands) backend.
 
-[![CircleCI](https://circleci.com/gh/penta515/slash-command-decorator.svg?style=svg)](https://circleci.com/gh/penta515/slash-command-decorator)
+[![CircleCI](https://circleci.com/gh/penta515/slash-command-decorator.svg?style=svg)](https://circleci.com/gh/penta515/slash-command-decorator) [![Code Climate](https://codeclimate.com/github/penta515/slash-command-decorator/badges/gpa.svg)](https://codeclimate.com/github/penta515/slash-command-decorator)
 
 ## Installation
 The latest release of slash-command-decorator can be installed via pip
