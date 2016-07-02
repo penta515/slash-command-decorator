@@ -10,8 +10,9 @@ long_description = (
 
 setup(
     name='slash-command-decorator',
-    version='0.0.1',
+    version='0.0.3',
     description='Useful Slack Slash Command decorators for AWS Lambda.',
+    long_description=long_description,
     author='penta515',
     author_email='penta0515@gmail.com',
     url='https://github.com/penta515/slash-command-decorator',
