@@ -4,7 +4,7 @@ slash-command-decorator is a simple decorator for the use of AWS Lambda as the [
 [![CircleCI](https://circleci.com/gh/penta515/slash-command-decorator.svg?style=svg)](https://circleci.com/gh/penta515/slash-command-decorator) [![Code Climate](https://codeclimate.com/github/penta515/slash-command-decorator/badges/gpa.svg)](https://codeclimate.com/github/penta515/slash-command-decorator)
 
 ## Installation
-The latest release of slash-command-decorator can be installed via pip
+The latest release of slash-command-decorator can be installed via pip.
 
 ```
 $ pip install slash-command-decorator
@@ -20,7 +20,7 @@ $ python setup.py install
 
 ## Set Query String in event
 
-In handler function `event.body` parameter, it is necessary to set up URL query string that was tranmitted by Slack 
+In handler function `event.body` parameter, it is necessary to set up URL query string that was tranmitted by Slack
 
 
 ###Example event.body
@@ -75,8 +75,8 @@ def lambda_handler(event, context):
 ```
 
 ###Types of Responses
-####1.ephemeral 
- 
+####1.ephemeral
+
 ```python
 @respond_to_option("^help$")
 def help_option(reaction):
@@ -123,4 +123,4 @@ $ py.test tests
 
 ## License
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) 
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
